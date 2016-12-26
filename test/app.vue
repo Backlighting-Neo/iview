@@ -24,28 +24,28 @@ li + li {
     <div>
         <nav>
             <ul>
-                <li><a v-link="'/button'">Button</a></li>
-                <li><a v-link="'/card'">Card</a></li>
-                <li><a v-link="'/message'">Message</a></li>
-                <li><a v-link="'/more'">More</a></li>
-                <li><a v-link="'/page'">Page</a></li>
-                <li><a v-link="'/poptip'">Poptip</a></li>
-                <li><a v-link="'/tooltip'">Tooltip</a></li>
-                <li><a v-link="'/radio'">Radio</a></li>
-                <li><a v-link="'/select'">Select</a></li>
-                <li><a v-link="'/slider'">Slider</a></li>
-                <li><a v-link="'/step'">Step</a></li>
-                <li><a v-link="'/switch'">Switch</a></li>
-                <li><a v-link="'/alert'">Alert</a></li>
-                <li><a v-link="'/tag'">Tag</a></li>
-                <li><a v-link="'/input'">Input</a></li>
-                <li><a v-link="'/cascader'">Cascader</a></li>
-                <li><a v-link="'/transfer'">Transfer</a></li>
-                <li><a v-link="'/table'">Table</a></li>
-                <li><a v-link="'/dropdown'">Dropdown</a></li>
-                <li><a v-link="'/tabs'">Tabs</a></li>
-                <li><a v-link="'/menu'">Menu</a></li>
-                <li><a v-link="'/date'">Date</a></li>
+                <li><router-link to="'/button'">Button</router-link></li>
+                <li><router-link to="'/card'">Card</router-link></li>
+                <li><router-link to="'/message'">Message</router-link></li>
+                <li><router-link to="'/more'">More</router-link></li>
+                <li><router-link to="'/page'">Page</router-link></li>
+                <li><router-link to="'/poptip'">Poptip</router-link></li>
+                <li><router-link to="'/tooltip'">Tooltip</router-link></li>
+                <li><router-link to="'/radio'">Radio</router-link></li>
+                <li><router-link to="'/select'">Select</router-link></li>
+                <li><router-link to="'/slider'">Slider</router-link></li>
+                <li><router-link to="'/step'">Step</router-link></li>
+                <li><router-link to="'/switch'">Switch</router-link></li>
+                <li><router-link to="'/alert'">Alert</router-link></li>
+                <li><router-link to="'/tag'">Tag</router-link></li>
+                <li><router-link to="'/input'">Input</router-link></li>
+                <li><router-link to="'/cascader'">Cascader</router-link></li>
+                <li><router-link to="'/transfer'">Transfer</router-link></li>
+                <li><router-link to="'/table'">Table</router-link></li>
+                <li><router-link to="'/dropdown'">Dropdown</router-link></li>
+                <li><router-link to="'/tabs'">Tabs</router-link></li>
+                <li><router-link to="'/menu'">Menu</router-link></li>
+                <li><router-link to="'/date'">Date</router-link></li>
             </ul>
         </nav>
         <router-view></router-view>
@@ -58,7 +58,7 @@ li + li {
 
             }
         },
-        ready: function() {
+        mounted: function() {
 
         },
         beforeDestroy: function() {

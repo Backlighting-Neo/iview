@@ -17,12 +17,30 @@
         </Submenu>
     </Menu>
     <br>
-    <p>切换主题</p>
-    <Radio-group :model.sync="theme1">
-        <Radio value="light"></Radio>
-        <Radio value="dark"></Radio>
-        <Radio value="primary"></Radio>
-    </Radio-group>
+    <Menu theme="light" active-key="a">
+        <Menu-group title="我的交易">
+            <Menu-item key="a">
+              <Icon type="document-text"></Icon>
+              收到的订单
+          </Menu-item>
+      </Menu-group>
+      <Menu-group title="爆料管理">
+        <Menu-item key="3">
+          <Icon type="ios-book"></Icon>
+          新建爆料
+      </Menu-item>
+      <Menu-item key="4">
+          <Icon type="ios-copy"></Icon>
+          爆料列表
+      </Menu-item>
+  </Menu-group>
+</Menu>
+<p>切换主题</p>
+<Radio-group :model.sync="theme1">
+    <Radio value="light"></Radio>
+    <Radio value="dark"></Radio>
+    <Radio value="primary"></Radio>
+</Radio-group>
 </template>
 <script>
     export default {
